@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#7788AA</color>
+    <color name="reverse_background">#223355</color>
+    <color name="highlighted">#AABBFF</color>
+    <color name="reverse_highlighted">#556688</color>
+    <color name="item_background">#99AADD</color>
+    <color name="button_background">@android:color/transparent</color>
+    <color name="reverse_button_background">@android:color/transparent</color>
+    <color name="warning_red">#AA4444</color>
+    <color name="reverse_red">#994444</color>
+    <color name="lines">#444444</color>
+    <color name="reverse_lines">#CCCCCC</color>
+    <color name="odd_item">#556688</color>
+    <color name="reverse_odd">#333344</color>
+    
+    <color name="main_text">#BBCCFF</color>
+    <color name="plain_text">#DDEEFF</color>
+    
+    
+    <color name="play_answer_button_background">#334466</color>
+    <color name="play_answer_button_text">#BBCCFF</color>
+    <color name="play_answer_button_disactive_background">#660033</color>
+    <color name="play_answer_button_disactive_text">#FF6666</color>
+    <color name="play_answer_button_suggest_background">#FF9900</color>
+    <color name="play_answer_button_suggest_text">#99FF66</color>
+    <color name="gray">#626264</color>
+    <color name="purple">#660033</color>
+    
+</resources>

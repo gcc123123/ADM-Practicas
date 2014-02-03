@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/reverse_background"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/scores_label"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:text="@string/scores"
+            android:textColor="@color/main_text"
+            android:textStyle="bold"
+            android:textSize="35sp" />
+        
+        <View 
+	         android:layout_width="match_parent"
+	         android:layout_height="1dp"
+	         android:background="@color/reverse_lines"
+	         />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/reverse_highlighted"
+            android:weightSum="1"
+            android:layout_weight="0.1" >
+            
+
+            <TextView
+                android:id="@+id/local_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/local"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+               	android:textColor="@color/plain_text"
+                android:textSize="20sp" />
+
+	        <View 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/reverse_lines"
+	            />
+	        
+            <TextView
+                android:id="@+id/friends_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/friends"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textColor="@color/plain_text"
+                android:textSize="20sp" />
+
+        </TabWidget>
+
+        <View 
+	         android:layout_width="match_parent"
+	         android:layout_height="1dp"
+	         android:background="@color/reverse_lines"
+	         />
+        
+        <ListView
+            android:id="@+id/scores_list"
+            style="@color/plain_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:background="@color/reverse_highlighted" >
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/reverse_lines" >
+        </View>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:background="@color/reverse_odd"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:weightSum="1" >
+        
+	        <Button
+	            android:id="@+id/delete_scores_button"
+	            android:text="@string/delete"
+	            android:onClick="tryToDeleteScores"
+	            style="@style/PlainButton"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.5"
+	            android:textColor="@color/warning_red"
+	            android:textSize="30sp" />
+	        
+	        <View 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/reverse_lines"/>
+	        
+	        <Button
+	            android:id="@+id/scores_back_button"
+	            android:text="@string/back"
+	            android:onClick="closeScoresActivity"
+	            style="@style/PlainButton"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.5"
+	            android:textSize="30sp"
+	            />
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
